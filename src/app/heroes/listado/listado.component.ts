@@ -14,4 +14,12 @@ export class ListadoComponent implements OnInit {
     
   }
 
+  heroes: string[] = ['Spiderman','Ironman','Hulk','Thor']
+  heroeBorrado: string = '';
+
+  borrarHeroe() {
+    this.heroeBorrado = this.heroes.shift() || '';
+    
+  }
+
 }
